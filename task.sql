@@ -4,8 +4,8 @@ USE ShopDB;
 CREATE TABLE IF NOT EXISTS Products (
     ID INT AUTO_INCREMENT PRIMARY KEY,
     Name VARCHAR(50) NOT NULL,
-    Description TEXT,
-    Price DECIMAL(10, 2) NOT NULL,
+    Description VARCHAR(100),
+    Price INT NOT NULL,
     WarehouseAmount INT NOT NULL
 );
 
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS Customers (
     FirstName VARCHAR(50) NOT NULL,
     LastName VARCHAR(50) NOT NULL,
     Email VARCHAR(50) NOT NULL UNIQUE,
-    Address TEXT
+    Address VARCHAR(50)
 );
 
 CREATE TABLE IF NOT EXISTS Orders (
