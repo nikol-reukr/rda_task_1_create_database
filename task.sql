@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS Customers (
     FirstName VARCHAR(50) NOT NULL,
     LastName VARCHAR(50) NOT NULL,
     Email VARCHAR(50) NOT NULL UNIQUE,
-    Address VARCHAR(50)
+    Address VARCHAR(100)
 );
 
 CREATE TABLE IF NOT EXISTS Orders (
